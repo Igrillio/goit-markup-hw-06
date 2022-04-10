@@ -50,7 +50,40 @@
                 <div class="backdrop is-hidden" data-modal>               
                     <div class="modal">
                         <div class="modal-close" data-modal-close></div>
+
+
+                        <form class="hero-form" action="">
+                            <h class="hero-form-header">Оставьте свои данные, мы вам перезвоним</h>
+
+                            <label class="hero-form-label" for="hero-form-name">Имя</label>
+                            <input class="hero-form-input" type="text" id="hero-form-name">
+
+                            <label class="hero-form-label" for="hero-form-tel">Телефон</label>
+                            <input class="hero-form-input" type="text" id="hero-form-tel">
+
+                            <label class="hero-form-label" for="hero-form-mail">Почта</label>
+                            <input class="hero-form-input" type="text" id="hero-form-mail">
+
+                            <label class="hero-form-label" for="hero-form-comment">Комментарий</label>
+                            <textarea class="textarea" name="" id="hero-form-comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+
+                            <label class="hero-form-checkbox-label" for="hero-checkbox">
+                                <div class="hero-form-checkbox-checkmark">
+                                    <svg class="hero-form-checkbox-icon">
+                                        <use href="./images/svg/svg_model_icon.svg#icon-Vector-1"></use>
+                                    </svg>
+                                </div>
+                                <input class="hero-form-checkbox-item" type="checkbox" name="checkbox" id="hero-checkbox">Соглашаюсь с рассылкой и принимаю
+                                <a class="hero-form-checkbox-link" href="#">Условия договора</a>
+                            </label>
+                            <div class="hero-form-btn-place">
+                                <button class="hero-form-btn">Отправить</button>
+                            </div>
+                            
+                        </form>
+
                     </div>
+                    
                 </div>          
             </div>     
         </section>
@@ -362,7 +395,7 @@
                 <form action="" class="footer-form">                
                     <label for="footer-form-name"></label>
                     <input class="footer-form-input" type="text" name="E-mail" id="footer-form-name" placeholder="E-mail">
-                    <button class="footer-btn">Подписаться
+                    <button class="footer-btn" type="submit">Подписаться
                         <svg class="footer-btn-svg">
                             <use href="./images/svg/svg_footer.svg#icon-footer_send"></use>
                         </svg>
