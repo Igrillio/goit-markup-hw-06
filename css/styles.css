@@ -267,15 +267,15 @@ margin-bottom: 16px;
 .hero-form {
     display: flex;
     flex-direction: column;
-    padding: 40px;
-    width: 100%;
+    padding: 44px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
  .hero-form-header {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
-    text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
     
@@ -287,7 +287,7 @@ margin-bottom: 16px;
  .hero-input-box:focus-within .hero-form-input-icon {
     fill: #2196F3;
  }
- .hero-form-input:focus {
+ .hero-form-input:focus-within {
     border-color: #2196F3;
  }
  .hero-form-input-icon {
@@ -325,18 +325,57 @@ margin-bottom: 16px;
     box-sizing: border-box;
     border-radius: 4px;
     margin-bottom: 20px;
+    outline: none;
+ }
+ .textarea:focus-within {
+     border-color: #2196F3;
+ }
+ .textarea::placeholder {
+     padding: 16px 12px;
+     color: gray;
+     opacity: 50%;
+     
  }
 
  .hero-form-checkbox-label {
-     margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    color: #757575;
+    user-select: none;
  }
 
- .hero-form-checkbox-icon {
+ .hero-form-checkbox-checkmark {
+     position: absolute;
+     width: 16px;
+     height: 16px;
+     left: 57px;
+     border: 2px solid black;
+     border-radius: 2px;
+ }
+ .contact-us-checkbox-item:checked~
+.contact-us-checkbox-checkmark {
+      background-color: blue;
+  }
+ 
+ .hero-form-checkbox-item {
+     position: absolute;
+     width: 0px;
+     height: 0px;
+    z-index: -1;
+ }
+
+ .hero-form-checkbox-icon { 
+    position: absolute;
     width: 11px;
     height: 8px;
+    left: 0;
+    
  }
 
  .hero-form-checkbox-link {
+     color: #2196F3;
      text-decoration: underline;
  }
 
